@@ -27,5 +27,4 @@ dependencies:
   - geovista 
   - pyvista-xarray 
   - pykdtree
-  - cuda-version=11.8 # absolutely no idea what I am doing here
-  - cuda-nvcc
+  - cuda-nvcc # absolutely no idea what I am doing here
