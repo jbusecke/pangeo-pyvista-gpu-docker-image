@@ -13,4 +13,19 @@ dependencies:
   # Everyone wants to use nbgitpuller for everything, so let's do that
   - nbgitpuller=1.1.*
   # Add other packages here
-  # -
+  - vtk=*=egl* 
+  - pyvista 
+  - trame
+  - pyproj
+  - cartopy
+  - xarray 
+  - netcdf4
+  - zarr
+  - fsspec
+  - gcsfs
+  - distributed
+  - geovista 
+  - pyvista-xarray 
+  - pykdtree
+  - cuda-version=11.8 # absolutely no idea what I am doing here
+  - cuda-nvcc
