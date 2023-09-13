@@ -16,15 +16,16 @@ dependencies:
   - vtk=*=egl* 
   - pyvista 
   - trame
-  - pyproj
-  - cartopy
-  - xarray 
-  - netcdf4
-  - zarr
-  - fsspec
-  - gcsfs
-  - distributed
-  - geovista 
-  - pyvista-xarray 
-  - pykdtree
-  - cuda-nvcc # absolutely no idea what I am doing here
+  # - pyproj
+  # - cartopy
+  # - xarray 
+  # - netcdf4
+  # - zarr
+  # - fsspec
+  # - gcsfs
+  # - distributed
+  # - geovista 
+  # - pyvista-xarray 
+  # - pykdtree
+  - cudatoolkit
+  # - cuda-nvcc # absolutely no idea what I am doing here
