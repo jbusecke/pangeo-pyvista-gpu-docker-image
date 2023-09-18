@@ -1,5 +1,6 @@
 # This is the standard conda configuration file. Use this file to list
 # the conda packages that you need installed in your environment.
+name: notebook
 channels:
   - conda-forge
 
