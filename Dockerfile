@@ -7,9 +7,13 @@
 ARG PANGEO_BASE_IMAGE_TAG=master
 FROM pangeo/base-image:${PANGEO_BASE_IMAGE_TAG}
 
-RUN mamba env update -f environment.yml
-# # I wonder if I can just get the `vtk-egl-9.0.1*` wheel (https://github.com/pyvista/pyvista/releases/tag/0.27.0) from pip (see also here: https://docs.pyvista.org/version/stable/extras/building_vtk.html#building-wheels)
-RUN pip install --no-cache-dir --extra-index-url https://wheels.vtk.org vtk-egl-9.0.1*
+RUN mamba env create -f environment
+RUN conda activate notebook
+
+# # # I wonder if I can just get the `vtk-egl-9.0.1*` wheel (https://github.com/pyvista/pyvista/releases/tag/0.27.0) from pip (see also here: https://docs.pyvista.org/version/stable/extras/building_vtk.html#building-wheels)
+# RUN pip install --no-cache-dir --extra-index-url https://wheels.vtk.org vtk-egl-9.0.1*
+# RUN pip install pyvista trame
+# RUN mamba install 
 
 # #from https://github.com/pyvista/pyvista/issues/2142
 # sudo apt install -y ninja-build cmake libgl1-mesa-dev python3-dev git
